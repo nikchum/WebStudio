@@ -5,7 +5,9 @@
 
 .footer__box {}
 
-.footer__box-adress {}
+.footer__box-adress {
+    text-align: center;
+}
 
 .logo {}
 
@@ -13,9 +15,15 @@
 
 .footer__address {}
 
-.footer__adress-list {}
+.footer__adress-list {
+    margin-top: 30px;
+}
 
-.footer__adress-item {}
+.footer__adress-item {
+    &:not(:first-child) {
+        margin-top: 8px;
+    }
+}
 
 .footer__address-link {
     font-style: normal;
@@ -34,8 +42,35 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer__address-link,
+.footer__mail,
+.footer__phone {
 
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+    }
+}
 
 .logo__web--white {
     color: #fff;
+}
+
+.footer__box-social {
+    margin-top: 60px;
+}
+
+.footer__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.social__link--fill {
+    fill: #ffffff;
+    background-color: #ffffff1a;
+    ;
 }

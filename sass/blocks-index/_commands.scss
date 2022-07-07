@@ -1,16 +1,33 @@
+.section--com-bgc {
+    background-color: #F5F4FA;
+}
+
 .commands__title {
     font-size: 28px;
     line-height: 1.18;
+    text-align: center;
+
 }
 
 .commands__list {}
 
 .commands__item {
+    margin-top: 30px;
+
+
     max-width: 450px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .commands__img {
     max-width: 100%;
+}
+
+.commands__box {
+    padding: 30px 0 24px 0;
 }
 
 .commands__name {
@@ -19,6 +36,41 @@
 }
 
 .commands__pos {
+    margin-top: 10px;
+
     font-size: 16px;
     line-height: 1.19;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social__item {
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    fill: #AFB1B8;
+    border-radius: 50%;
+
+
+    &:hover,
+    &:focus {
+        fill: #FFFFFF;
+        background-color: $link-hover-color;
+    }
 }

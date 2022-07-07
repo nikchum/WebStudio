@@ -1,10 +1,22 @@
 .hero {
-    padding: 118px 60px;
+    padding: 118px 15px 0;
+
+    height: 400px;
+    max-width: 480px;
+    margin: 0 auto;
     background: rgba(47, 48, 58, 0.4);
     text-align: center;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
+
 .hero__title {
+    margin: 0 auto 30px;
+
     max-width: 360px;
 
     font-weight: 900;

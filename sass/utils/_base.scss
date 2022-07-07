@@ -1,5 +1,6 @@
 body {
     color: $p-color;
+    background-color: #fff;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     letter-spacing: 0.03em;
@@ -24,6 +25,10 @@ p {
     border: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 li {
     list-style: none;
 }
@@ -35,6 +40,7 @@ a {
 img {
     display: block;
     height: 100%;
+
 }
 
 .visually-hidden {
