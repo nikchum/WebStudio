@@ -27,6 +27,8 @@
     background: #F5F4FA;
     border-radius: 4px;
 
+    transition: background-color 250ms $cubic, color 250ms $cubic, box-shadow 250ms $cubic;
+
     &:hover,
     &:focus {
         background: $link-hover-color;
@@ -40,12 +42,6 @@
 }
 
 .card__item {
-    max-width: 450px;
-
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
 
     &:not(:first-child) {
         margin-top: 30px;
@@ -53,10 +49,52 @@
 }
 
 
-.card__link {}
+.card__link {
+    display: block;
+    max-width: 450px;
+
+    transition: box-shadow 250ms $cubic;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &:hover .card__discr,
+    &:focus .card__discr {
+        transform: translateY(0);
+    }
+}
+
+.card__box-img {
+    position: relative;
+    overflow: hidden;
+}
 
 .card__img {
     max-width: 100%;
+}
+
+.card__discr {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    align-items: center;
+
+    font-size: 18px;
+    line-height: 1.56;
+    color: #FFFFFF;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+
+    transition: transform 250ms $cubic;
 }
 
 .card__box {

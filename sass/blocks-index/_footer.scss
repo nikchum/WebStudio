@@ -46,6 +46,8 @@
 .footer__mail,
 .footer__phone {
 
+    transition: color 250ms $cubic;
+
     &:hover,
     &:focus {
         color: $link-hover-color;

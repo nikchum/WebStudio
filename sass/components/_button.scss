@@ -13,6 +13,8 @@
 
     color: #FFFFFF;
 
+    transition: background-color 250ms $cubic;
+
     &:hover,
     &:focus {
         background-color: $btn-hover-bgc;

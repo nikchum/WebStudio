@@ -35,6 +35,8 @@
 
     fill: #AFB1B8;
 
+    transition: fill 250ms $cubic, border-color 250ms $cubic;
+
     &:hover,
     &:focus {
         fill: $link-hover-color;
