@@ -21,7 +21,7 @@
     <header class="header">
       <div class="container container--flex">
         <a href="/index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
-        <div class="nav">
+        <div class="nav is-open" id="nav" data-menu>
           <nav class="nav__box">
             <ul class="nav__list">
               <li class="nav__item">
@@ -48,9 +48,15 @@
             <li class="nav__social"><a class="nav__social-link" href="">LinkedIn</a></li>
           </ul>
         </div>
-        <button class="container__button">
-          <svg height="40" width="40">
-            <use href="./images/symbol.svg#menu"></use>
+        <button
+          class="container__button is-open"
+          aria-controls="nav"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg height="40" width="40" aria-label="Переключатель мобильного меню">
+            <use class="container__icon-burger" href="./images/symbol.svg#menu"></use>
+            <use class="container__icon-close" href="./images/symbol.svg#icon-close-nav"></use>
           </svg>
         </button>
       </div>
@@ -416,8 +422,55 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="form">
+          <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+          <label class="form__label"
+            >Имя
+            <input class="form__input" type="text" name="name" />
+            <svg class="form__icon" height="18" width="18">
+              <use href="./images/symbol.svg#modal1"></use>
+            </svg>
+          </label>
+
+          <label class="form__label"
+            >Телефон
+            <input class="form__input" type="tel" name="name" />
+            <svg class="form__icon" height="18" width="18">
+              <use href="./images/symbol.svg#modal2"></use>
+            </svg>
+          </label>
+
+          <label class="form__label"
+            >Почта
+            <input class="form__input" type="email" name="name" />
+            <svg class="form__icon" height="18" width="18">
+              <use href="./images/symbol.svg#modal3"></use>
+            </svg>
+          </label>
+
+          <label class="form__label form__label--margin"
+            >Комментарий
+            <textarea
+              class="form__textarea"
+              name="feedback"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+
+          <label class="form__check">
+            <input class="form__check-input" type="checkbox" name="check" />
+            <span class="form__check-icon"></span>
+
+            Соглашаюсь с рассылкой и принимаю&nbsp;
+            <a class="form__check-link" href="">Условия договора</a>
+          </label>
+
+          <button class="button form__button" type="submit">Отправить</button>
+        </form>
+
         <button class="modal__close" data-modal-close>
           <svg height="11" width="11">
             <use href="./images/symbol.svg#close"></use>
@@ -427,5 +480,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
