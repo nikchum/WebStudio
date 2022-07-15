@@ -1,11 +1,20 @@
 .clients {}
 
 .clients__title {
-    margin-bottom: 30px;
-
     text-align: center;
-    font-size: 28px;
-    line-height: 1.18;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.18;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: 1.17;
+    }
 
 }
 
@@ -18,22 +27,30 @@
 }
 
 .clients__item {
-    width: calc((100% - 60px) / 2);
     margin: 15px;
+
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 60px) / 2);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 90px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 180px) / 6);
+    }
 }
 
 .clients__link {
-
     display: flex;
     justify-content: center;
     align-items: center;
-
 
     height: 92px;
 
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-
     fill: #AFB1B8;
 
     transition: fill 250ms $cubic, border-color 250ms $cubic;

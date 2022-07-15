@@ -1,12 +1,43 @@
 .footer {
     padding: 60px 0;
     background-color: #2F303A;
+
 }
 
 .footer__box {}
 
+.footer__tablet-thumb {
+    @media screen and (min-width: 768px) {
+        display: flex;
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: center;
+
+    }
+}
+
+.footer__thumb {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 100px;
+    }
+}
+
 .footer__box-adress {
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+    }
 }
 
 .logo {}
@@ -59,7 +90,18 @@
 }
 
 .footer__box-social {
-    margin-top: 60px;
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 5px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+    }
+
 }
 
 .footer__text {
@@ -75,4 +117,105 @@
     fill: #ffffff;
     background-color: #ffffff1a;
     ;
+}
+
+.sub-form {
+    display: flex;
+
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        margin-top: 60px;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+    }
+}
+
+.sub-form__label {
+    display: flex;
+    flex-direction: column;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #FFFFFF;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        align-items: center;
+    }
+
+    @media screen and (max-width: 1199px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+    }
+}
+
+.sub-form__input {
+
+    margin-top: 20px;
+    padding: 15px 16px;
+
+    height: 50px;
+
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #FFFFFF;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: inherit;
+
+    transition: border-color 250ms $cubic;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:hover,
+    &:focus {
+        border-color: #2196f3;
+    }
+
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
+}
+
+.sub-form__button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+
+    @media screen and (max-width: 1199px) {
+        margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 36px;
+    }
+}
+
+.sub-form__icon {
+    margin-left: 10px;
 }

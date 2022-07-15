@@ -21,22 +21,32 @@
     <header class="header">
       <div class="container container--flex">
         <a href="/index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
-        <div class="nav is-open" id="nav" data-menu>
+        <div class="nav" id="nav" data-menu>
           <nav class="nav__box">
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="./index.html" class="nav__link nav__link--active">Студия</a>
               </li>
               <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
-              <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+              <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
             </ul>
           </nav>
           <ul class="nav__contact-list">
             <li class="nav__contact-item">
-              <a href="tel:+380961111111" class="nav__contact-phone">+38 096 111 11 11</a>
+              <a href="tel:+380961111111" class="nav__contact-phone">
+                <svg class="nav__icon" width="10" height="16">
+                  <use href="./images/symbol.svg#phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
             <li class="nav__contact-item">
-              <a href="mailto:info@devstudio.com" class="nav__contact-mail">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com" class="nav__contact-mail">
+                <svg class="nav__icon" width="16" height="12">
+                  <use href="./images/symbol.svg#mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
           </ul>
           <ul class="nav__social-list">
@@ -49,7 +59,7 @@
           </ul>
         </div>
         <button
-          class="container__button is-open"
+          class="container__button"
           aria-controls="nav"
           aria-expanded="false"
           data-menu-button
@@ -123,23 +133,42 @@
         </div>
       </section>
       <!-- Род деятельности -->
-      <section class="section section--metier-mobile">
-        <div class="container metier">
-          <h2 class="metier__title">Чем мы занимаемся</h2>
-          <ul class="metier__list">
-            <li class="metier__item">
-              <img class="metier__img" src="./images/box1.jpg" alt="Печатает на ПК" width="370" />
+      <section class="section section--service-mobile">
+        <div class="container service">
+          <h2 class="service__title">Чем мы занимаемся</h2>
+          <ul class="service__list">
+            <li class="service__item">
+              <div class="service__thumb">
+                <img
+                  class="service__img"
+                  src="./images/box1.jpg"
+                  alt="Печатает на ПК"
+                  width="370"
+                />
+                <p class="service__text">Десктопные приложения</p>
+              </div>
             </li>
-            <li class="metier__item">
-              <img class="metier__img" src="./images/box2.jpg" alt="Смартфон в руке" width="370" />
+            <li class="service__item">
+              <div class="service__thumb">
+                <img
+                  class="service__img"
+                  src="./images/box2.jpg"
+                  alt="Смартфон в руке"
+                  width="370"
+                />
+                <p class="service__text">Мобильные приложения</p>
+              </div>
             </li>
-            <li class="metier__item">
-              <img
-                class="metier__img"
-                src="./images/box3.jpg"
-                alt="Палитра на планшете"
-                width="370"
-              />
+            <li class="service__item">
+              <div class="service__thumb">
+                <img
+                  class="service__img"
+                  src="./images/box3.jpg"
+                  alt="Палитра на планшете"
+                  width="370"
+                />
+                <p class="service__text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -159,7 +188,7 @@
                   <li class="social__item">
                     <a href="" class="social__link"
                       ><svg height="20" width="20">
-                        <use href="./images/symbol.svg#inst"></use>
+                        <use href="./images/symbol.svg#inst" ></use>
                       </svg>
                     </a>
                   </li>
@@ -360,63 +389,79 @@
 
     <!-- Футер -->
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container footer__box">
         <div class="footer__box-adress">
-          <a href="/index.html" class="logo"
-            ><span class="logo__web">Web</span><span class="logo__web--white">Studio</span></a
-          >
-          <address class="footer__address">
-            <ul class="footer__adress-list">
-              <li class="footer__adress-item">
-                <a
-                  href="https://www.google.com/maps/place/%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BF%D0%B0%D0%BA/@50.4107962,30.407124,15z/data=!4m13!1m7!3m6!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!3b1!8m2!3d50.4265807!4d30.5383858!3m4!1s0x40d4c9706e812c13:0x440aabaaa31970f6!8m2!3d50.4164536!4d30.4248601"
-                  class="footer__address-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >г. Киев, пр-т Отрадный, 97
-                </a>
-              </li>
-              <li class="footer__adress-item">
-                <a href="mailto:info@devstudio.com" class="footer__mail">info@devstudio.com</a>
-              </li>
-              <li class="footer__adress-item">
-                <a href="tel:+380961111111" class="footer__phone">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-          <div class="footer__box-social">
-            <p class="footer__text">присоединяйтесь</p>
-            <ul class="social">
-              <li class="social__item">
-                <a href="" class="social__link social__link--fill"
-                  ><svg height="20" width="20">
-                    <use href="./images/symbol.svg#inst"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="" class="social__link social__link--fill">
-                  <svg height="20" width="20">
-                    <use href="./images/symbol.svg#tw"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="" class="social__link social__link--fill">
-                  <svg height="20" width="20">
-                    <use href="./images/symbol.svg#fb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="" class="social__link social__link--fill">
-                  <svg height="20" width="20">
-                    <use href="./images/symbol.svg#ld"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div class="footer__tablet-thumb">
+            <div class="footer__thumb">
+              <a href="/index.html" class="logo"
+                ><span class="logo__web">Web</span><span class="logo__web--white">Studio</span></a
+              >
+              <address class="footer__address">
+                <ul class="footer__adress-list">
+                  <li class="footer__adress-item">
+                    <a
+                      href="https://www.google.com/maps/place/%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BF%D0%B0%D0%BA/@50.4107962,30.407124,15z/data=!4m13!1m7!3m6!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!3b1!8m2!3d50.4265807!4d30.5383858!3m4!1s0x40d4c9706e812c13:0x440aabaaa31970f6!8m2!3d50.4164536!4d30.4248601"
+                      class="footer__address-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >г. Киев, пр-т Отрадный, 97
+                    </a>
+                  </li>
+                  <li class="footer__adress-item">
+                    <a href="mailto:info@devstudio.com" class="footer__mail">info@devstudio.com</a>
+                  </li>
+                  <li class="footer__adress-item">
+                    <a href="tel:+380961111111" class="footer__phone">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer__box-social">
+              <p class="footer__text">присоединяйтесь</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a href="" class="social__link social__link--fill"
+                    ><svg height="20" width="20">
+                      <use href="./images/symbol.svg#inst"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link social__link--fill">
+                    <svg height="20" width="20">
+                      <use href="./images/symbol.svg#tw"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link social__link--fill">
+                    <svg height="20" width="20">
+                      <use href="./images/symbol.svg#fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link social__link--fill">
+                    <svg height="20" width="20">
+                      <use href="./images/symbol.svg#ld"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub-form">
+            <label class="sub-form__label"
+              >Подпишитесь на рассылку
+              <input class="sub-form__input" type="email" name="email" placeholder="Email" />
+            </label>
+            <button class="button sub-form__button">
+              Подписаться
+              <svg class="sub-form__icon" width="24" height="24">
+                <use href="images/symbol.svg#tg"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
