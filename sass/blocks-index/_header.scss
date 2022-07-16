@@ -70,9 +70,9 @@
     background-color: #fff;
 
     @media screen and (max-width: 767px) {
-        position: absolute;
+        position: fixed;
         left: 0;
-        top: 101%;
+        top: 61px;
         width: 100%;
 
         padding: 40px 5px;
@@ -85,6 +85,8 @@
         &.is-open {
             opacity: 1;
             visibility: visible;
+            height: 100vh;
+            overflow-y: scroll;
         }
     }
 
