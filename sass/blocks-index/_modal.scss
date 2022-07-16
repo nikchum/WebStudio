@@ -14,8 +14,6 @@
 
     transition: opacity 250ms $cubic;
     overflow-y: scroll;
-
-
 }
 
 .backdrop.is-hidden {
@@ -24,14 +22,11 @@
 }
 
 .backdrop.is-hidden .modal {
-
     transform: scale(1.1);
-
 }
 
 .modal {
     position: absolute;
-
     padding: 40px;
 
     background-color: #fff;
@@ -48,7 +43,6 @@
     @media screen and (min-width: 1200px) {
         width: 528px;
     }
-
 }
 
 .form {}
@@ -59,8 +53,6 @@
     text-align: center;
     font-size: 20px;
     line-height: 1.5;
-
-
 }
 
 .form__label {
@@ -75,7 +67,6 @@
     letter-spacing: 0.01em;
 
     transition: color 250ms $cubic;
-
 
     &:hover,
     &:focus-within {
@@ -124,7 +115,6 @@
     border-radius: 4px;
 
     transition: border-color 250ms $cubic;
-
 }
 
 .form__icon {
@@ -146,7 +136,6 @@
 
     font-weight: 400;
 
-
     @media screen and (max-width: 1199px) {
         font-size: 12px;
         line-height: 1.17;
@@ -156,7 +145,6 @@
         font-size: 14px;
         line-height: 1.71;
     }
-
 }
 
 .form__check-input {
@@ -179,7 +167,6 @@
     background-color: #2196F3;
     border-color: transparent;
     background-origin: border-box;
-
 }
 
 .form__check-link {
