@@ -32,7 +32,7 @@
               <li class="nav__item">
                 <a href="./portfolio.html" class="nav__link nav__link--active">Портфолио</a>
               </li>
-              <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+              <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
             </ul>
           </nav>
           <ul class="nav__contact-list">
@@ -83,24 +83,26 @@
           <!-- Фильтр -->
 
           <ul class="filter">
-            <li class="filter__item"><button type="button" class="filter__button">Все</button></li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Веб-сайты</button>
+              <button type="button" data-name="all" class="filter__button">Все</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Приложения</button>
+              <button type="button" data-name="web" class="filter__button">Веб-сайты</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Дизайн</button>
+              <button type="button" data-name="app" class="filter__button">Приложения</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Маркетинг</button>
+              <button type="button" data-name="desing" class="filter__button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" data-name="market" class="filter__button">Маркетинг</button>
             </li>
           </ul>
 
           <!-- Cards -->
           <ul class="card">
-            <li class="card__item">
+            <li class="card__item" data-name="web">
               <a class="card__link" href="">
                 <div class="card__box-img">
                   <img
@@ -122,7 +124,7 @@
                 </div>
               </a>
             </li>
-            <li class="card__item">
+            <li class="card__item" data-name="desing">
               <a class="card__link" href="">
                 <div class="card__box-img">
                   <img
@@ -145,7 +147,7 @@
                 </div>
               </a>
             </li>
-            <li class="card__item">
+            <li class="card__item" data-name="app">
               <a class="card__link" href="">
                 <div class="card__box-img">
                   <img
@@ -167,7 +169,7 @@
                 </div>
               </a>
             </li>
-            <li class="card__item">
+            <li class="card__item" data-name="market">
               <a class="card__link" href="">
                 <div class="card__box-img">
                   <img
@@ -189,7 +191,7 @@
                 </div>
               </a>
             </li>
-            <li class="card__item">
+            <li class="card__item" data-name="app">
               <a class="card__link" href="">
                 <div class="card__box-img">
                   <img
@@ -211,7 +213,7 @@
                 </div>
               </a>
             </li>
-            <li class="card__item">
+            <li class="card__item" data-name="web">
               <a class="card__link" href="">
                 <div class="card__box-img">
                   <img
@@ -233,7 +235,7 @@
                 </div>
               </a>
             </li>
-            <li class="card__item">
+            <li class="card__item" data-name="desing">
               <a class="card__link" href="">
                 <div class="card__box-img">
                   <img
@@ -255,7 +257,7 @@
                 </div>
               </a>
             </li>
-            <li class="card__item">
+            <li class="card__item" data-name="market">
               <a class="card__link" href="">
                 <div class="card__box-img">
                   <img
@@ -277,7 +279,7 @@
                 </div>
               </a>
             </li>
-            <li class="card__item">
+            <li class="card__item" data-name="app">
               <a class="card__link" href="">
                 <div class="card__box-img">
                   <img
@@ -385,5 +387,6 @@
     </footer>
 
     <script src="./js/menu.js"></script>
+    <script src="./js/portfolioTab.js"></script>
   </body>
 </html>

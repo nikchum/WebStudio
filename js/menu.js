@@ -1,15 +1,21 @@
 (() => {
-  const menuBtnRef = document.querySelector("[data-menu-button]");
-  const mobileMenuRef = document.querySelector("[data-menu]");
+  const menuBtnRef = document.querySelector('[data-menu-button]');
+  const mobileMenuRef = document.querySelector('[data-menu]');
+  const contactsRef = document.querySelector('a[href="#contacts"]');
 
-  menuBtnRef.addEventListener("click", () => {
-    const expanded =
-      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+  contactsRef.addEventListener('click', () => {
+    menuBtnRef.classList.remove('is-open');
+    document.body.classList.remove('modal-open');
+    mobileMenuRef.classList.remove('is-open');
+  });
 
-    menuBtnRef.classList.toggle("is-open");
-    document.body.classList.toggle("modal-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
+  menuBtnRef.addEventListener('click', () => {
+    const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
-    mobileMenuRef.classList.toggle("is-open");
+    menuBtnRef.classList.toggle('is-open');
+    document.body.classList.toggle('modal-open');
+    menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+    mobileMenuRef.classList.toggle('is-open');
   });
 })();

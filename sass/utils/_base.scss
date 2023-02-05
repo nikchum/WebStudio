@@ -60,3 +60,11 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hidden-card {
+    display: none;
+}

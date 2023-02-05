@@ -59,6 +59,14 @@ img {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.hidden-card {
+  display: none;
+}
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
